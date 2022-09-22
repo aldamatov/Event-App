@@ -1,0 +1,359 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+/* <---------Reset CSS---------> */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	animation-duration: 0.01ms !important;
+	animation-iteration-count: 1 !important;
+	transition-duration: 0.01ms !important;
+	scroll-behavior: auto !important;
+}
+
+* {
+	margin: 0;
+    line-height: 1rem;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+html:focus-within {
+	scroll-behavior: auto;
+}
+
+body {
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeSpeed;
+    overflow: auto;
+    width: 100%;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	pointer-events: none;
+    height: 500px;
+    filter: drop-shadow(0px 0px 17.6435px rgba(0, 0, 0, 0.05));
+    border-radius: 13.2326px;
+
+    
+}
+
+p,h1,h2,h3,h4,h5,h6 {
+	overflow-wrap: break-word;
+}
+
+#root,#__next {
+	isolation: isolate;
+}
+/* <---------Variables---------> */
+
+:root {
+	/* Primary Colors */
+	--Violet: hsl(257, 40%, 49%);
+	--Soft-Magenta: hsl(300, 69%, 71%);
+	--white: #f6f2ff;
+
+	/* Font Size */
+	--head: 3rem;
+	--text: 1.3rem;
+
+	/* Font Weight */
+	--regular: 400;
+	--bold: 600;
+}
+
+/* </---------Variables---------> */
+
+/* <---------Utility Classes---------> */
+
+.head {
+	font-size: var(--head);
+	font-weight: var(--bold);
+	color: var(--white);
+	font-family: "Poppins", sans-serif;
+}
+
+.text {
+	font-size: var(--text);
+	font-weight: var(--regular);
+	color: var(--white);
+	font-family: "Open Sans", sans-serif;
+}
+
+/* </---------Utility Classes---------> */
+
+
+.background {
+	min-height: 100vh;
+	background-color: var(--white);
+	background-repeat: no-repeat;
+	background-size: 85% 100%;
+	background-position: center;
+	overflow: auto;
+	padding: 0 4em;
+} 
+h1{
+font-family: 'Helvetica';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 1px;
+text-align: center;
+color: #240D57;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.snapchat{
+width: 163px;
+height: 41px;
+font-family: 'Helvetica';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 41px;
+text-align: center;
+margin: auto;
+
+background: linear-gradient(90deg, #8456EC 24.2%, #B066F1 72.33%, #E87BF8 120.46%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+}
+.hero-text2{
+    width: 321px;
+height: 36px;
+
+font-family: 'Helvetica';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 18px;
+text-align: center;
+color: #4F4F4F;
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.container {
+	max-width: 1800px;
+    width: 100%;
+    margin-top: 100px;
+    
+    
+}
+
+.hero {
+	margin: 5em 0 3em 0;
+	display: flex;
+	gap: 1em;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+
+.hero-img {
+	flex-basis: 50%;
+}
+
+.mockup {
+	width: 100%;
+}
+
+.hero-text {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5em;
+	align-self: center;
+	max-width: 35em;
+}
+
+.btn {
+    
+
+	background: linear-gradient(90deg, #8456EC 3.25%, #E87BF8 100%);
+    border-radius: 10px;
+	color: white;
+	border: 0;
+	
+	padding: 1em 1em;   
+	box-shadow: 5px 5px 10px 0px rgba(63, 63, 63, 0.86);
+	cursor: pointer;
+    text-align: center;
+    width: 250px;
+    display: flex;
+	gap: 1em;
+       
+}
+
+.btn:hover {
+	color: rgb(0, 0, 0);
+	background-color: #5e1269;
+}
+
+/* body{
+    background-color: #f6f2ff
+} */
+/* .container{
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+.header{
+    width: 90vw;
+    margin: 94px 26px;
+    
+}
+.image img{
+    height: 90%;
+    object-fit: contain;
+} */
+
+.socials {
+	display: flex;
+	gap: 1em;
+	justify-content: end;
+    margin-top: 5%;
+}
+
+.social-btn {
+	border-radius: 100%;
+	background:  #240D57;
+	width: 3em;
+	height: 3em;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 1.5em;
+}
+
+.social-btn:hover {
+	border: 2px solid #E87BF8;
+}
+
+.facebook {
+	background-image: url(https://bit.ly/3ANDWRW);
+}
+
+.facebook:hover {
+	background-image: url(https://bit.ly/3Aj9mOo);
+}
+
+.twitter {
+	background-image: url(https://bit.ly/3e1Xl8Q);
+}
+
+.twitter:hover {
+	background-image: url(https://bit.ly/3R9V4Xp);
+}
+.instagram {
+	background-image: url(https://bit.ly/3pO9z7r);
+}
+
+.instagram:hover {
+	background-image: url(https://bit.ly/3dTh0aN);
+}
+
+
+/* <---------Media Queries---------> */
+
+/* For medium screen */
+@media (min-width: 800px) and (max-width: 1500px) {
+	:root {
+		--head: 2.5rem;
+		--text: 1.2rem;
+	}
+
+	.hero-text {
+		max-width: 30em;
+	}
+}
+
+/* For smaller screen */
+@media (min-width: 200px) and (max-width: 800px) {
+	:root {
+		--head: 2rem;
+		--text: 1rem;
+	}
+    img{
+        display: block;
+	max-width: 100%;
+	pointer-events: none;
+    width: 300px;
+    height: 300px;
+    left: calc(50% - 165.63px/2 + 0.32px);
+    top: 290px;
+    filter: drop-shadow(0px 0px 17.6435px rgba(0, 0, 0, 0.05));
+    border-radius: 13.2326px;
+    }
+
+	.background {
+		min-height: 100vh;
+        background-color: var(--white);
+        background-repeat: no-repeat;
+        background-size: 100% 60%;
+        background-position: top;
+        overflow: auto;
+        padding: 0 2em;
+       
+	}
+
+	.container {
+		margin: 6em 0 1em 0;
+        
+	}
+
+	
+	.hero {
+		flex-direction: column;
+		margin: 4em 0 2em 0;
+        align-items: center;
+	}
+    .hero-img{
+        width: 60%;
+        text-align: center;
+        margin-top: 1em;
+       
+    }
+	.hero-text {
+		text-align: center;
+        flex: 2;
+	}
+
+	.btn {
+        width: 200px;
+		margin:  30px auto;
+        text-align: center;
+        display: flex;
+        padding: 10px 0 10px 30px;
+      
+	}
+
+	.socials {
+		justify-content: center;
+        margin-top: 10px;
+	}
+}
+
+/* For medium screen */
+@media (min-width: 600px) and (max-width: 800px) {
+	:root {
+		--head: 2.5rem;
+		--text: 1.2rem;
+	}
+}
+
+/* </---------Media Queries---------> */
